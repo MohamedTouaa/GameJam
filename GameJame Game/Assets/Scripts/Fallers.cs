@@ -10,15 +10,13 @@ public class Fallers : MonoBehaviour
     {
         transform.eulerAngles += new Vector3(0f, 0f, rotationspeed * Time.deltaTime);
     }
-
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag=="Ground")
+        if (collision.gameObject.CompareTag("Ground"))
         {
             Debug.Log("it works");
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
     }
-
 
 }

@@ -81,4 +81,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallers: {fileID: 0}
-  spawntime: 5
+  spawntime: 3
