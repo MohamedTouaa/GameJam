@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4039889898017953017}
   - component: {fileID: 4395114953731386591}
   - component: {fileID: 2347789472225420706}
+  - component: {fileID: 5665757551921466593}
   m_Layer: 0
   m_Name: FireGround
   m_TagString: FireGround
@@ -130,3 +131,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.8981533, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &5665757551921466593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5136521593209619145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d99501e4151bc5429d13cd695a673f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionEffect: {fileID: 325684863503050557, guid: 4260d1a11c35f0d4492bb143450e056e, type: 3}

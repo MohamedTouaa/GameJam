@@ -10,11 +10,20 @@ public class Player : MonoBehaviour
     private float waitTime = 5f;
     public PlayerMovement movement;
     public Transform spawnPosition;
+    public GameObject explosion;
+    private SpriteRenderer sprite;
+    private Rigidbody2D rb;
 
+    private void Awake()
+    {
+        sprite = GetComponent<SpriteRenderer>();
+        rb = GetComponent<Rigidbody2D>();
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Fallers") || collision.gameObject.CompareTag("FireGround"))
         {
+            
             Damage();
         }
     }
@@ -26,19 +35,35 @@ public class Player : MonoBehaviour
 
     private void Damage()
     {
-        health--;
+        
+        
         if (health == 0)
         {
             Destroy(this.gameObject);
         }
         else
         {
-            this.transform.position = spawnPosition.position;
+            StartCoroutine(wait());
+            health--;
+              
+
         }
     }
 
     private void activateMovement()
     {
+        movement.enabled = true;
+    }
+
+  private IEnumerator wait()
+    {
+        rb.velocity = Vector2.zero;
+        movement.enabled = false;
+        sprite.enabled = false;
+        Instantiate(explosion, this.transform.position, Quaternion.identity);
+        yield return new WaitForSeconds(1f);
+        this.transform.position = spawnPosition.position;
+        sprite.enabled = true;
         movement.enabled = true;
     }
 
