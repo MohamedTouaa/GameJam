@@ -446,11 +446,11 @@ MonoBehaviour:
   groundCheck: {fileID: 754816596}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   wallCheck: {fileID: 1983666009}
   wallLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
 --- !u!1 &1983666008
 GameObject:
   m_ObjectHideFlags: 0
