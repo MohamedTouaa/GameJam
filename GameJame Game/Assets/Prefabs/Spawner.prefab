@@ -80,5 +80,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5644538cf1c873a45bf0da8ccef89770, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallers: {fileID: 0}
+  fallers: {fileID: 9126481772707570141, guid: 0738713252317a740916f8f90e6180b1, type: 3}
   spawntime: 3
