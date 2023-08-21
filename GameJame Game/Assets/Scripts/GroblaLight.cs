@@ -7,7 +7,7 @@ public class GroblaLight : MonoBehaviour
 {
     private Light2D light;
     [SerializeField]
-    private float waitTime = 10f;
+    private float waitTime = 10f,lightIntensity = 0f;
     private void Awake()
     {
         light = GetComponent<Light2D>();
@@ -25,7 +25,7 @@ public class GroblaLight : MonoBehaviour
     }
     private void chaneLight()
     {
-        light.intensity = 0f;
+        light.intensity = lightIntensity;
     }
 
 

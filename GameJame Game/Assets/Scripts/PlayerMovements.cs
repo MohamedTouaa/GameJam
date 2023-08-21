@@ -54,7 +54,11 @@ public class PlayerMovement : MonoBehaviour
         // Reset jump animation parameter when player is grounded
         if (IsGrounded())
         {
-            activeDust();
+            if (rb.velocity.x > 0.1f)
+            {
+                activeDust();
+            }
+
             animator.SetBool("isWalking", Mathf.Abs(rb.velocity.x) > 0.1f);
             animator.SetBool("Jump", false);
 
