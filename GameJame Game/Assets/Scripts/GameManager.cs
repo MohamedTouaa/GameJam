@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    private AudioManager audioManager;
     [SerializeField]
     public GameObject[] lights;
 
@@ -15,8 +16,14 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private float waittime;
 
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
     void Start()
     {
+        audioManager.PlaySFX(audioManager.countdown);
         Invoke(nameof(ActivateLights), waittime);
         Invoke(nameof(desactivateRenderer), waittime);  
     }
@@ -38,6 +45,6 @@ public class GameManager : MonoBehaviour
             sprite.enabled = false;
         }
     }
-
+    
 
 }

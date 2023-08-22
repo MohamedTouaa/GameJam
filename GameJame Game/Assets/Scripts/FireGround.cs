@@ -14,7 +14,7 @@ public class FireGround : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            audioManager.PlaySFX(audioManager.Death);
+            
         }
     }
 

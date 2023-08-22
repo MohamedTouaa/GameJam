@@ -14,10 +14,14 @@ public class Player : MonoBehaviour
     private SpriteRenderer sprite;
     private Rigidbody2D rb;
 
+    AudioManager audioManager;
+
+    
     private void Awake()
     {
         sprite = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -35,8 +39,8 @@ public class Player : MonoBehaviour
 
     private void Damage()
     {
-        
-        
+
+        audioManager.PlaySFX(audioManager.Death);
         if (health == 0)
         {
             Destroy(this.gameObject);

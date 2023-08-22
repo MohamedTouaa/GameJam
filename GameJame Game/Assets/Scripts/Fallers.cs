@@ -20,7 +20,7 @@ public class Fallers : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Player"))
         {
-            audioManager.PlaySFX(audioManager.Explosion);
+            
             Debug.Log("it works");
             Destroy(gameObject);
         }

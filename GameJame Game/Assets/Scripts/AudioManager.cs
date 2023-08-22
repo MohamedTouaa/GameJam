@@ -15,15 +15,21 @@ public class AudioManager : MonoBehaviour
     public AudioClip background;
     public AudioClip Death;
     public AudioClip Explosion;
+    public AudioClip countdown;
 
     private void Start()
     {
         MusicSource.clip = background;
-        MusicSource.Play();
+        Invoke(nameof(PlayMusic), 10f);
     }
 
     public void PlaySFX(AudioClip clip)
     {
         SFXSource.PlayOneShot(clip);
+    }
+
+    private void PlayMusic()
+    {
+        MusicSource.Play();
     }
 }
