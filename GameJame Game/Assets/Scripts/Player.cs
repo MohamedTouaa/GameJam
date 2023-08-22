@@ -9,11 +9,11 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float waitTime = 5f;
     public PlayerMovement movement;
-    public Transform spawnPosition;
     public GameObject explosion;
     private SpriteRenderer sprite;
     private Rigidbody2D rb;
-    public HeealthBar heealthBar;
+    private GameObject heealthBar;
+    private HeealthBar Thehealth;
 
     AudioManager audioManager;
     
@@ -24,6 +24,9 @@ public class Player : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        heealthBar = GameObject.FindGameObjectWithTag("HealthBar");
+        Thehealth = heealthBar.GetComponent<HeealthBar>();
+
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -51,7 +54,7 @@ public class Player : MonoBehaviour
         else
         {
             health--;
-            heealthBar.destroyHealth();
+            Thehealth.destroyHealth();
             StartCoroutine(wait());
         }
     }
@@ -68,7 +71,7 @@ public class Player : MonoBehaviour
         sprite.enabled = false;
         Instantiate(explosion, this.transform.position, Quaternion.identity);
         yield return new WaitForSeconds(1f);
-        this.transform.position = spawnPosition.position;
+        this.transform.position = new Vector2(-53.95f, -3.19f);
         sprite.enabled = true;
         movement.enabled = true;
     }

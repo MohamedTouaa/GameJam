@@ -8,6 +8,9 @@ TagManager:
   - FireGround
   - Fallers
   - Audio
+  - Timer
+  - Text
+  - HealthBar
   layers:
   - Default
   - TransparentFX

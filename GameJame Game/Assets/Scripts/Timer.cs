@@ -17,12 +17,12 @@ public class Timer : MonoBehaviour
 
     private void Start()
     {
-        Begin(durration);
+       Begin(durration);
     }
 
-    private void Begin(int second)
+    private void Begin(int seconds)
     {
-        remainingDuration = second;
+        remainingDuration = seconds ;
         StartCoroutine(UpdateTimer());
     }
 

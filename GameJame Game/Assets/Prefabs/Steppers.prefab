@@ -50,7 +50,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_Intensity: 15.62
+  m_Intensity: 15
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 00000000
@@ -67,8 +67,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.06215, y: 0.034400016, z: 0}
-    m_Extent: {x: 1.90985, y: 0.7566, z: 0}
+    m_Center: {x: -0.06645, y: 0.032999992, z: 0}
+    m_Extent: {x: 1.91055, y: 0.754, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 2178219226207359531}
   - component: {fileID: 8083280247025528974}
   - component: {fileID: 9219069368996726842}
-  - component: {fileID: 7885341657249155127}
+  - component: {fileID: 1985088154756305115}
   m_Layer: 6
   m_Name: Steppers
   m_TagString: Untagged
@@ -228,7 +228,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3, y: 0.41243958}
   m_EdgeRadius: 0
---- !u!251 &7885341657249155127
+--- !u!251 &1985088154756305115
 PlatformEffector2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

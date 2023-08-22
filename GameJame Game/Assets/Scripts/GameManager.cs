@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        audioManager.PlaySFX(audioManager.countdown);
+       
         Invoke(nameof(ActivateLights), waittime);
         Invoke(nameof(desactivateRenderer), waittime);
         Invoke(nameof(killPlayer), timerTime);
@@ -58,6 +58,8 @@ public class GameManager : MonoBehaviour
         Instantiate(DestructionEffect, Player.transform.position, Quaternion.identity);
         Destroy(Player.gameObject);
     }
+
+  
 
 
 }

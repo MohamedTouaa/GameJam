@@ -21,7 +21,7 @@ public class Fallers : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Player"))
         {
             
-            Debug.Log("it works");
+            
             Destroy(gameObject);
         }
     }
