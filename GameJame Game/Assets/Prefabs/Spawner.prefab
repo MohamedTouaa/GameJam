@@ -81,4 +81,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallers: {fileID: 9126481772707570141, guid: 0738713252317a740916f8f90e6180b1, type: 3}
-  spawntime: 3
+  spawntime: 1.5
