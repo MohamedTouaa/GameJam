@@ -3,11 +3,14 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private float horizontal;
+    [SerializeField]
     private float speed = 8f;
+    [SerializeField]
     private float jumpingPower = 16f;
     private bool isFacingRight = true;
 
     private bool isWallSliding;
+    [SerializeField]
     private float wallSlidingSpeed = 2f;
 
     Animator animator;
@@ -17,43 +20,50 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Transform wallCheck;
     [SerializeField] private LayerMask wallLayer;
+    [SerializeField] private ParticleSystem dust;
 
     private void Start()
     {
-         animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
     }
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
-        {   
+        {
+            activeDust();
             animator.SetBool("Jump", true);
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
-            
-            
+
+
         }
 
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
-            
+
         }
 
         WallSlide();
         Flip();
 
         // Set walk animation parameter based on player's velocity
-        
+
         animator.SetBool("Jump", rb.velocity.y > 0.1f);
         // Reset jump animation parameter when player is grounded
         if (IsGrounded())
         {
+            if (rb.velocity.x >0 && rb.velocity.x <0)
+            {
+                activeDust();
+            }
+
             animator.SetBool("isWalking", Mathf.Abs(rb.velocity.x) > 0.1f);
             animator.SetBool("Jump", false);
-           
+
         }
-        else 
+        else
         {
             animator.SetBool("isWalking", false);
         }
@@ -91,10 +101,18 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
         {
+            activeDust();
             isFacingRight = !isFacingRight;
             Vector3 localScale = transform.localScale;
             localScale.x *= -1f;
             transform.localScale = localScale;
         }
     }
+
+    private void activeDust()
+    {
+        dust.Play();
+    }
+
+
 }

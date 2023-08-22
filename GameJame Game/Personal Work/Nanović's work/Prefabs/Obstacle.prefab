@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5153883015205734629}
   m_Layer: 0
   m_Name: Obstacle
-  m_TagString: Untagged
+  m_TagString: Fallers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -175,4 +175,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25db387a96af79341bb2da7e759de559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationspeed: 30
+  rotationspeed: 40
