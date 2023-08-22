@@ -13,10 +13,12 @@ public class Player : MonoBehaviour
     public GameObject explosion;
     private SpriteRenderer sprite;
     private Rigidbody2D rb;
+    public HeealthBar heealthBar;
 
     AudioManager audioManager;
-
     
+
+
     private void Awake()
     {
         sprite = GetComponent<SpriteRenderer>();
@@ -47,8 +49,10 @@ public class Player : MonoBehaviour
         }
         else
         {
-            StartCoroutine(wait());
             health--;
+            heealthBar.destroyHealth();
+            StartCoroutine(wait());
+            
               
 
         }

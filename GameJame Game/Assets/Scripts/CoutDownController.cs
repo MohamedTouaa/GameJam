@@ -9,6 +9,7 @@ public class CoutDownController : MonoBehaviour
     [SerializeField]
     private float coutdown = 5f;
     public TextMeshProUGUI coutdownText;
+    public GameObject Timer;
 
 
     private void Start()
@@ -32,6 +33,7 @@ public class CoutDownController : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         coutdownText.gameObject.SetActive(false);
+        Timer.gameObject.SetActive(true);
     }
 
 }

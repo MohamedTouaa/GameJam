@@ -9,6 +9,10 @@ public class GameManager : MonoBehaviour
     private AudioManager audioManager;
     [SerializeField]
     public GameObject[] lights;
+    public GameObject Player;
+
+    [SerializeField]
+    private float timerTime = 100f;
 
     [SerializeField]
     public SpriteRenderer[] sprites;
@@ -25,7 +29,8 @@ public class GameManager : MonoBehaviour
     {
         audioManager.PlaySFX(audioManager.countdown);
         Invoke(nameof(ActivateLights), waittime);
-        Invoke(nameof(desactivateRenderer), waittime);  
+        Invoke(nameof(desactivateRenderer), waittime);
+        Invoke(nameof(killPlayer), timerTime);
     }
 
 
@@ -40,11 +45,16 @@ public class GameManager : MonoBehaviour
 
     private void desactivateRenderer()
     {
-        foreach(var sprite in sprites)
+        foreach (var sprite in sprites)
         {
             sprite.enabled = false;
         }
     }
-    
+
+    private void killPlayer()
+    {
+        Destroy(Player.gameObject);
+    }
+
 
 }
