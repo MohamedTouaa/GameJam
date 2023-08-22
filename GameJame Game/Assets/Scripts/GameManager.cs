@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     public GameObject[] lights;
     public GameObject Player;
+    public GameObject DestructionEffect;
 
     [SerializeField]
     private float timerTime = 100f;
@@ -53,6 +54,8 @@ public class GameManager : MonoBehaviour
 
     private void killPlayer()
     {
+        audioManager.PlaySFX(audioManager.Explosion);
+        Instantiate(DestructionEffect, Player.transform.position, Quaternion.identity);
         Destroy(Player.gameObject);
     }
 

@@ -354,10 +354,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd20f524f7e97a4eb5a83ee7535c202, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
-  waitTime: 5
+  health: 2
+  waitTime: 10
   movement: {fileID: 6069693895117856133}
   spawnPosition: {fileID: 0}
+  explosion: {fileID: 325684863503050557, guid: 4260d1a11c35f0d4492bb143450e056e, type: 3}
+  heealthBar: {fileID: 0}
 --- !u!50 &7179010864348702428
 Rigidbody2D:
   serializedVersion: 4

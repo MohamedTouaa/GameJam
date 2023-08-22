@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
         // Reset jump animation parameter when player is grounded
         if (IsGrounded())
         {
-            if (rb.velocity.x !=0)
+            if (rb.velocity.x >0 && rb.velocity.x <0)
             {
                 activeDust();
             }

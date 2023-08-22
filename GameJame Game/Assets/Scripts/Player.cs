@@ -45,6 +45,7 @@ public class Player : MonoBehaviour
         audioManager.PlaySFX(audioManager.Death);
         if (health == 0)
         {
+            Instantiate(explosion, this.transform.position, Quaternion.identity);
             Destroy(this.gameObject);
         }
         else
@@ -52,9 +53,6 @@ public class Player : MonoBehaviour
             health--;
             heealthBar.destroyHealth();
             StartCoroutine(wait());
-            
-              
-
         }
     }
 
