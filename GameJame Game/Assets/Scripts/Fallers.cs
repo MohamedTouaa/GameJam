@@ -5,7 +5,8 @@ using UnityEngine;
 public class Fallers : MonoBehaviour
 {
     private AudioManager audioManager;
-
+    [SerializeField]
+    private float reset = 2f;
     private void Awake()
     {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
@@ -20,10 +21,23 @@ public class Fallers : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Player"))
         {
-            
-            
+
+
             Destroy(gameObject);
         }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            StartCoroutine(Playmusic());
+        }
+;
+    }
+    private IEnumerator Playmusic()
+    {
+        audioManager.PlaySFX(audioManager.Explosion);
+        yield return new WaitForSeconds(reset);
     }
 
 }

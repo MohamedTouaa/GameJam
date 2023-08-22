@@ -16,6 +16,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip Death;
     public AudioClip Explosion;
     public AudioClip countdown;
+    public AudioClip teleport;
 
     private void Start()
     {

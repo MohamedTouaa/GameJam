@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4395114953731386591}
   - component: {fileID: 2347789472225420706}
   - component: {fileID: 5665757551921466593}
+  - component: {fileID: 6678230522674666426}
   m_Layer: 0
   m_Name: FireGround
   m_TagString: FireGround
@@ -144,6 +145,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d99501e4151bc5429d13cd695a673f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6678230522674666426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5136521593209619145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0feff91d1de48ac41a487d5044026ebc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waitTime: 10
+  changer: {fileID: -1158843594, guid: 810de307204a6a340b84ebd597c778b8, type: 3}
 --- !u!1 &5900062880216508303
 GameObject:
   m_ObjectHideFlags: 0

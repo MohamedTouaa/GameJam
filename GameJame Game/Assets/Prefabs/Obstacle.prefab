@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2398695980685625972}
   - component: {fileID: 3805374976663202446}
   - component: {fileID: 5153883015205734629}
+  - component: {fileID: 550883140268226639}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Fallers
@@ -100,6 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25db387a96af79341bb2da7e759de559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reset: 2
   rotationspeed: 30
 --- !u!50 &2398695980685625972
 Rigidbody2D:
@@ -175,4 +177,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25db387a96af79341bb2da7e759de559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reset: 2
   rotationspeed: 40
+--- !u!58 &550883140268226639
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9126481772707570141}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 3
