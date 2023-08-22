@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - FireGround
   - Fallers
+  - Audio
   layers:
   - Default
   - TransparentFX
