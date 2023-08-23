@@ -170,10 +170,10 @@ GameObject:
   - component: {fileID: 7145395791204573314}
   - component: {fileID: 7751486278442548210}
   - component: {fileID: 1731506874719621598}
-  - component: {fileID: 2198305130867003705}
   - component: {fileID: 2074445680038096730}
   - component: {fileID: 4180667137317998969}
   - component: {fileID: 7179010864348702428}
+  - component: {fileID: 5538136855811256449}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -280,38 +280,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5792888935572354732}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d9495fdc356ad141b8d4e32c109f9f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  jumpingPower: 20
-  wallSlidingSpeed: 2
-  rb: {fileID: 7179010864348702428}
-  groundCheck: {fileID: 1942974891776121498}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  wallCheck: {fileID: 1911384172676044103}
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  dust: {fileID: 2738974777044666847}
---- !u!114 &2198305130867003705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5792888935572354732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d9495fdc356ad141b8d4e32c109f9f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  jumpingPower: 20
+  jumpingPower: 18
   wallSlidingSpeed: 2
   rb: {fileID: 7179010864348702428}
   groundCheck: {fileID: 1942974891776121498}
@@ -411,6 +386,19 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &5538136855811256449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5792888935572354732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 571f6be60c8193f49b398e90e373e865, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 7179010864348702428}
 --- !u!1001 &7165856612824268813
 PrefabInstance:
   m_ObjectHideFlags: 0

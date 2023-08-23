@@ -18,6 +18,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip countdown;
     public AudioClip teleport;
     public AudioClip button;
+    public AudioClip coinCollect;
 
     private void Start()
     {
