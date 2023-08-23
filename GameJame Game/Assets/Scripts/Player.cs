@@ -44,7 +44,7 @@ public class Player : MonoBehaviour
 
     private void Damage()
     {
-
+        health--;
         audioManager.PlaySFX(audioManager.Death);
         if (health == 0)
         {
@@ -54,7 +54,7 @@ public class Player : MonoBehaviour
         }
         else
         {
-            health--;
+            
             Thehealth.destroyHealth();
             StartCoroutine(wait());
         }

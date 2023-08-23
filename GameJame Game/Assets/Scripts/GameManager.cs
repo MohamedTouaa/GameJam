@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
 
     private void killPlayer()
     {
-        audioManager.PlaySFX(audioManager.Explosion);
+        audioManager.PlaySFX(audioManager.Death);
         Instantiate(DestructionEffect, Player.transform.position, Quaternion.identity);
         Destroy(Player.gameObject);
     }
