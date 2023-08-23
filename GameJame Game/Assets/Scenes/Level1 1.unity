@@ -126618,7 +126618,7 @@ PrefabInstance:
     - target: {fileID: 4180667137317998969, guid: 495e02596a0c7d34190e6378d99978c2, type: 3}
       propertyPath: movement
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2107718557}
     - target: {fileID: 4180667137317998969, guid: 495e02596a0c7d34190e6378d99978c2, type: 3}
       propertyPath: heealthBar
       value: 
@@ -126702,18 +126702,13 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5792888935572354732, guid: 495e02596a0c7d34190e6378d99978c2, type: 3}
-      insertIndex: 5
-      addedObject: {fileID: 2107718551}
+      insertIndex: 3
+      addedObject: {fileID: 2107718557}
   m_SourcePrefab: {fileID: 100100000, guid: 495e02596a0c7d34190e6378d99978c2, type: 3}
 --- !u!4 &645064052 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2033610333812104510, guid: 405a2898eda79294191cff3f7fbc2ec3, type: 3}
   m_PrefabInstance: {fileID: 8274569918784573069}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &680461822 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 4293105571130643629, guid: 495e02596a0c7d34190e6378d99978c2, type: 3}
-  m_PrefabInstance: {fileID: 615613816}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &693882822
 GameObject:
@@ -129283,7 +129278,12 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5792888935572354732, guid: 495e02596a0c7d34190e6378d99978c2, type: 3}
   m_PrefabInstance: {fileID: 615613816}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2107718551
+--- !u!50 &2107718552 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 7179010864348702428, guid: 495e02596a0c7d34190e6378d99978c2, type: 3}
+  m_PrefabInstance: {fileID: 615613816}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2107718557
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -129292,7 +129292,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2107718550}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 825cf28cf6bbd0d47a514f602ce06853, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d9495fdc356ad141b8d4e32c109f9f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
@@ -129307,12 +129307,7 @@ MonoBehaviour:
   wallLayer:
     serializedVersion: 2
     m_Bits: 64
-  dust: {fileID: 680461822}
---- !u!50 &2107718552 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 7179010864348702428, guid: 495e02596a0c7d34190e6378d99978c2, type: 3}
-  m_PrefabInstance: {fileID: 615613816}
-  m_PrefabAsset: {fileID: 0}
+  dust: {fileID: 0}
 --- !u!1001 &3007279251423556
 PrefabInstance:
   m_ObjectHideFlags: 0

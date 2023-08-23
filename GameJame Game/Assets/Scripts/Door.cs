@@ -3,8 +3,8 @@ using UnityEngine.InputSystem;
 
 public class Door : MonoBehaviour
 {
-    public GameObject key; // Reference to the key GameObject
-    public GameObject door; // Reference to the door GameObject
+    public GameObject key; // Reference to the key GameObject // Reference to the door GameObject
+    public GameObject door;
     private bool isOpen = false;
 
     private void OnTriggerEnter2D(Collider2D collision)

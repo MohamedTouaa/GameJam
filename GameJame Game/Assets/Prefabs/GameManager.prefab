@@ -49,11 +49,14 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   Player: {fileID: 0}
   DestructionEffect: {fileID: 325684863503050557, guid: 4260d1a11c35f0d4492bb143450e056e, type: 3}
-  timerTime: 32
+  timerTime: 100
   sprites:
-  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -75,5 +78,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coutdown: 10
-  coutdownText: {fileID: 0}
-  Timer: {fileID: 0}
