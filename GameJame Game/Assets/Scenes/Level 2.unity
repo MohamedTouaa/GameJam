@@ -104422,11 +104422,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8360003352736567913, guid: 495e02596a0c7d34190e6378d99978c2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -59.18
+      value: -24.69
       objectReference: {fileID: 0}
     - target: {fileID: 8360003352736567913, guid: 495e02596a0c7d34190e6378d99978c2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.84
+      value: 0.56
       objectReference: {fileID: 0}
     - target: {fileID: 8360003352736567913, guid: 495e02596a0c7d34190e6378d99978c2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -104617,6 +104617,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coutdown: 5
   coutdownText: {fileID: 2007179930}
+  Timer: {fileID: 0}
 --- !u!1 &851936031 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7839971049182235518, guid: 100085f2d6975b64192585a0c38f0017, type: 3}
