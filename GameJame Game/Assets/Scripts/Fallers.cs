@@ -26,18 +26,7 @@ public class Fallers : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            StartCoroutine(Playmusic());
-        }
-;
-    }
-    private IEnumerator Playmusic()
-    {
-        audioManager.PlaySFX(audioManager.Explosion);
-        yield return new WaitForSeconds(reset);
-    }
+   
+   
 
 }
