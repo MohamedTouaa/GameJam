@@ -32,42 +32,35 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
-            activeDust();
             animator.SetBool("Jump", true);
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
-
-
         }
 
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
-
         }
 
         WallSlide();
         Flip();
 
-        // Set walk animation parameter based on player's velocity
-
-        animator.SetBool("Jump", rb.velocity.y > 0.1f);
-        // Reset jump animation parameter when player is grounded
+        // Set walk animation parameter based on player's velocity, but only if grounded
         if (IsGrounded())
         {
-            if (rb.velocity.x >0 )
-            {
-                activeDust();
-            }
-
             animator.SetBool("isWalking", Mathf.Abs(rb.velocity.x) > 0.1f);
-            animator.SetBool("Jump", false);
-
         }
         else
         {
-            animator.SetBool("isWalking", false);
+            animator.SetBool("isWalking", false); // Not grounded, don't play walk animation
+        }
+
+        // Reset jump animation parameter when player is grounded and moving downward
+        if (IsGrounded() && rb.velocity.y <= 0f)
+        {
+            animator.SetBool("Jump", false);
         }
     }
+
 
     private void FixedUpdate()
     {
