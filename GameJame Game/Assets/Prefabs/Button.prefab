@@ -67,8 +67,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.16800004, y: -0.0146999955, z: 0}
-    m_Extent: {x: 2.0715, y: 1.2607, z: 0}
+    m_Center: {x: 0.17064995, y: -0.017499983, z: 0}
+    m_Extent: {x: 2.0743499, y: 1.2602999, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9086f33c3528b4f89f4aa7f81dd6d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 10
+  waitTime: 20
 --- !u!1 &8598181073612042621
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,7 +215,7 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1}
+  m_Offset: {x: 0, y: 1.2}
   serializedVersion: 2
   m_Radius: 2
 --- !u!114 &5202813086874930408
@@ -232,5 +232,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   door: {fileID: 0}
   interactionRange: 4
-  pressedSprite: {fileID: -1722001431, guid: 5e9e92f2561b86e479e22a99cf1c95aa, type: 3}
-  releasedSprite: {fileID: 1339564918, guid: 5e9e92f2561b86e479e22a99cf1c95aa, type: 3}
+  pressedSprite: {fileID: 1339564918, guid: 5e9e92f2561b86e479e22a99cf1c95aa, type: 3}
+  releasedSprite: {fileID: 2011115659, guid: 5e9e92f2561b86e479e22a99cf1c95aa, type: 3}

@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11b39e84da5dafe4083ab1b357966ee1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 10
+  waitTime: 20
 --- !u!1 &5792888935572354732
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,7 +286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  jumpingPower: 18
+  jumpingPower: 17
   wallSlidingSpeed: 2
   rb: {fileID: 7179010864348702428}
   groundCheck: {fileID: 1942974891776121498}
@@ -356,7 +356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
-  waitTime: 10
+  waitTime: 20
   movement: {fileID: 1731506874719621598}
   explosion: {fileID: 325684863503050557, guid: 4260d1a11c35f0d4492bb143450e056e, type: 3}
 --- !u!50 &7179010864348702428

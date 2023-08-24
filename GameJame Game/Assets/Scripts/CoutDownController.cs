@@ -11,20 +11,22 @@ public class CoutDownController : MonoBehaviour
     private TextMeshProUGUI coutdownText;
     private GameObject Timer;
 
+    [SerializeField]
+    private float waitTime = 20f;
     private AudioManager audioManager;
 
     private void Awake()
     {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         coutdownText = GameObject.FindGameObjectWithTag("Text").GetComponent<TextMeshProUGUI>();
-       
+
 
 
     }
     private void Start()
     {
         StartCoroutine(CountDown());
-        audioManager.PlaySFX(audioManager.countdown);
+        Invoke(nameof(PlayMusic), waitTime);
     }
 
     private IEnumerator CountDown()
@@ -43,9 +45,14 @@ public class CoutDownController : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         coutdownText.gameObject.SetActive(false);
-        
+
     }
 
-  
+    private void PlayMusic()
+    {
+        audioManager.PlaySFX(audioManager.countdown);
+    }
+
+
 
 }

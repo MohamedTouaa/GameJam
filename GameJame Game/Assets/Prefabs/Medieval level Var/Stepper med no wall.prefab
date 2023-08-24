@@ -50,23 +50,55 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4283928173830214943, guid: 100085f2d6975b64192585a0c38f0017, type: 3}
       propertyPath: m_LocalBounds.m_Center.x
-      value: -0.058399975
+      value: 0.0034999847
       objectReference: {fileID: 0}
     - target: {fileID: 4283928173830214943, guid: 100085f2d6975b64192585a0c38f0017, type: 3}
       propertyPath: m_LocalBounds.m_Center.y
-      value: 0.032550007
+      value: 0.3145415
       objectReference: {fileID: 0}
     - target: {fileID: 4283928173830214943, guid: 100085f2d6975b64192585a0c38f0017, type: 3}
       propertyPath: m_LocalBounds.m_Extent.x
-      value: 1.9035001
+      value: 1.4813
       objectReference: {fileID: 0}
     - target: {fileID: 4283928173830214943, guid: 100085f2d6975b64192585a0c38f0017, type: 3}
       propertyPath: m_LocalBounds.m_Extent.y
-      value: 0.74905
+      value: 0.12304149
+      objectReference: {fileID: 0}
+    - target: {fileID: 4283928173830214943, guid: 100085f2d6975b64192585a0c38f0017, type: 3}
+      propertyPath: m_ShapePath.Array.data[0].x
+      value: -1.4654512
+      objectReference: {fileID: 0}
+    - target: {fileID: 4283928173830214943, guid: 100085f2d6975b64192585a0c38f0017, type: 3}
+      propertyPath: m_ShapePath.Array.data[0].y
+      value: 0.19380665
+      objectReference: {fileID: 0}
+    - target: {fileID: 4283928173830214943, guid: 100085f2d6975b64192585a0c38f0017, type: 3}
+      propertyPath: m_ShapePath.Array.data[1].x
+      value: 1.4841137
+      objectReference: {fileID: 0}
+    - target: {fileID: 4283928173830214943, guid: 100085f2d6975b64192585a0c38f0017, type: 3}
+      propertyPath: m_ShapePath.Array.data[1].y
+      value: 0.21928167
+      objectReference: {fileID: 0}
+    - target: {fileID: 4283928173830214943, guid: 100085f2d6975b64192585a0c38f0017, type: 3}
+      propertyPath: m_ShapePath.Array.data[2].x
+      value: 1.4709597
+      objectReference: {fileID: 0}
+    - target: {fileID: 4283928173830214943, guid: 100085f2d6975b64192585a0c38f0017, type: 3}
+      propertyPath: m_ShapePath.Array.data[2].y
+      value: 0.43758297
+      objectReference: {fileID: 0}
+    - target: {fileID: 4283928173830214943, guid: 100085f2d6975b64192585a0c38f0017, type: 3}
+      propertyPath: m_ShapePath.Array.data[3].x
+      value: -1.4695854
+      objectReference: {fileID: 0}
+    - target: {fileID: 4283928173830214943, guid: 100085f2d6975b64192585a0c38f0017, type: 3}
+      propertyPath: m_ShapePath.Array.data[3].y
+      value: 0.42753172
       objectReference: {fileID: 0}
     - target: {fileID: 7839971049182235518, guid: 100085f2d6975b64192585a0c38f0017, type: 3}
       propertyPath: m_Name
-      value: Steppers (4) Variant
+      value: Stepper med no wall
       objectReference: {fileID: 0}
     - target: {fileID: 8083280247025528974, guid: 100085f2d6975b64192585a0c38f0017, type: 3}
       propertyPath: m_Sprite

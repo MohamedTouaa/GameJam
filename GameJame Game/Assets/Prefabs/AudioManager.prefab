@@ -48,6 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MusicSource: {fileID: 7361610183921278377}
   SFXSource: {fileID: 3362532388484498443}
+  waitTime: 20
   background: {fileID: 8300000, guid: ed3d1d87f3b999e49ad1c3f69db7c4bc, type: 3}
   Death: {fileID: 8300000, guid: 5cc9df99e204c634395576213b06d61e, type: 3}
   Explosion: {fileID: 8300000, guid: ca5b3238591bd4643aaccd8890a63f2b, type: 3}

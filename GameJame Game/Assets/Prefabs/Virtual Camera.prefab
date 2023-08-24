@@ -86,8 +86,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPostion: {fileID: 0}
-  size: 12
-  waitTime: 10
+  size: 11
+  waitTime: 20
 --- !u!1 &6672834339746199016
 GameObject:
   m_ObjectHideFlags: 0

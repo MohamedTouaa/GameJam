@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &963245108148260212
+--- !u!1001 &5899922134491109649
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -9,24 +9,28 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 7941433742125961011, guid: 22c884d9b5f5b1943a7718e7a70be392, type: 3}
+      propertyPath: m_ShapeLightFalloffSize
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941433742125961011, guid: 22c884d9b5f5b1943a7718e7a70be392, type: 3}
       propertyPath: m_LocalBounds.m_Center.x
-      value: -0.0031999946
+      value: -0.005649984
       objectReference: {fileID: 0}
     - target: {fileID: 7941433742125961011, guid: 22c884d9b5f5b1943a7718e7a70be392, type: 3}
       propertyPath: m_LocalBounds.m_Center.y
-      value: 0.008000016
+      value: 0.00940001
       objectReference: {fileID: 0}
     - target: {fileID: 7941433742125961011, guid: 22c884d9b5f5b1943a7718e7a70be392, type: 3}
       propertyPath: m_LocalBounds.m_Extent.x
-      value: 1.4638
+      value: 0.97125
       objectReference: {fileID: 0}
     - target: {fileID: 7941433742125961011, guid: 22c884d9b5f5b1943a7718e7a70be392, type: 3}
       propertyPath: m_LocalBounds.m_Extent.y
-      value: 2.4599
+      value: 1.9612
       objectReference: {fileID: 0}
     - target: {fileID: 8107312373240135679, guid: 22c884d9b5f5b1943a7718e7a70be392, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.68507975
+      value: 0.68462145
       objectReference: {fileID: 0}
     - target: {fileID: 8107312373240135679, guid: 22c884d9b5f5b1943a7718e7a70be392, type: 3}
       propertyPath: m_LocalPosition.x
@@ -34,7 +38,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8107312373240135679, guid: 22c884d9b5f5b1943a7718e7a70be392, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -19.9612
+      value: -19.9501
       objectReference: {fileID: 0}
     - target: {fileID: 8107312373240135679, guid: 22c884d9b5f5b1943a7718e7a70be392, type: 3}
       propertyPath: m_LocalPosition.z
@@ -68,39 +72,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9006935088715952985, guid: 22c884d9b5f5b1943a7718e7a70be392, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 9151216784081675158, guid: 22c884d9b5f5b1943a7718e7a70be392, type: 3}
       propertyPath: m_Name
       value: Door Keyed
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 8580729627372823842, guid: 22c884d9b5f5b1943a7718e7a70be392, type: 3}
+    - {fileID: -6518826574655417776, guid: 22c884d9b5f5b1943a7718e7a70be392, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 9151216784081675158, guid: 22c884d9b5f5b1943a7718e7a70be392, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7973808896936862048}
+      addedObject: {fileID: -1785420633736181017}
   m_SourcePrefab: {fileID: 100100000, guid: 22c884d9b5f5b1943a7718e7a70be392, type: 3}
---- !u!1 &8332087555567169250 stripped
+--- !u!1 &3395464264029928071 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9151216784081675158, guid: 22c884d9b5f5b1943a7718e7a70be392, type: 3}
-  m_PrefabInstance: {fileID: 963245108148260212}
+  m_PrefabInstance: {fileID: 5899922134491109649}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7973808896936862048
+--- !u!114 &-1785420633736181017
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8332087555567169250}
+  m_GameObject: {fileID: 3395464264029928071}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75c4f1059a8adfd4998e275e9d41a208, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ad1d4f91eb10934d946eff4532b30c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   key: {fileID: 0}
-  door: {fileID: 8332087555567169250}
+  door: {fileID: 0}
