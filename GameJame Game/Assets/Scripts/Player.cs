@@ -89,10 +89,10 @@ public class Player : MonoBehaviour
 
     private IEnumerator loadscene()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 5 || SceneManager.GetActiveScene().buildIndex == 6)
+        if (SceneManager.GetActiveScene().buildIndex == 6 || SceneManager.GetActiveScene().buildIndex == 7)
         {
             yield return new WaitForSeconds(1f);
-            SceneManager.LoadScene(5);
+            SceneManager.LoadScene(6);
            
         }
 
