@@ -11,6 +11,7 @@ TagManager:
   - Timer
   - Text
   - HealthBar
+  - Ladders
   layers:
   - Default
   - TransparentFX

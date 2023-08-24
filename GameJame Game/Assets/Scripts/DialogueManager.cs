@@ -61,19 +61,17 @@ public class DialogueManager : MonoBehaviour
     }
     private void Enddialogue()
     {
-
-        if (dialoguecounter + 1  >= NextDialogues.Length)
-        {
-            Debug.Log("Hello");
-            StopAllCoroutines();
-            SceneManager.LoadScene(3);
-        }if(dialoguecounter < NextDialogues.Length )
+        if (dialoguecounter < NextDialogues.Length - 1)
         {
             dialoguecounter++;
             NextDialogues[dialoguecounter].gameObject.SetActive(true);
             animator.SetBool("IsOpen", false);
         }
-        
-
+        else
+        {
+            
+            StopAllCoroutines();
+            SceneManager.LoadScene(3);
+        }
     }
 }

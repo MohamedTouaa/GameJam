@@ -101,7 +101,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reset: 2
-  rotationspeed: 30
+  audioDistance: 7
+  rotationspeed: 40
 --- !u!50 &2398695980685625972
 Rigidbody2D:
   serializedVersion: 4
@@ -177,4 +178,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reset: 2
+  audioDistance: 5
   rotationspeed: 40
