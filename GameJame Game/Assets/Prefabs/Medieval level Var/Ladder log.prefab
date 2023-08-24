@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &532758337952550592
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1771516279646011410, guid: c87259f8f2aaa5b47960995e4aba694d, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848920902950683496, guid: c87259f8f2aaa5b47960995e4aba694d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -28.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848920902950683496, guid: c87259f8f2aaa5b47960995e4aba694d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848920902950683496, guid: c87259f8f2aaa5b47960995e4aba694d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.064142026
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848920902950683496, guid: c87259f8f2aaa5b47960995e4aba694d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848920902950683496, guid: c87259f8f2aaa5b47960995e4aba694d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848920902950683496, guid: c87259f8f2aaa5b47960995e4aba694d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848920902950683496, guid: c87259f8f2aaa5b47960995e4aba694d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848920902950683496, guid: c87259f8f2aaa5b47960995e4aba694d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848920902950683496, guid: c87259f8f2aaa5b47960995e4aba694d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848920902950683496, guid: c87259f8f2aaa5b47960995e4aba694d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483301808501934412, guid: c87259f8f2aaa5b47960995e4aba694d, type: 3}
+      propertyPath: m_Size.y
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483301808501934412, guid: c87259f8f2aaa5b47960995e4aba694d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4b5ec7c9e5ac25d408a93ed3605eb100, type: 3}
+    - target: {fileID: 6017223241094410072, guid: c87259f8f2aaa5b47960995e4aba694d, type: 3}
+      propertyPath: m_Name
+      value: Ladder log
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1771516279646011410, guid: c87259f8f2aaa5b47960995e4aba694d, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6017223241094410072, guid: c87259f8f2aaa5b47960995e4aba694d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1790244951714120285}
+  m_SourcePrefab: {fileID: 100100000, guid: c87259f8f2aaa5b47960995e4aba694d, type: 3}
+--- !u!1 &6117511493230666136 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6017223241094410072, guid: c87259f8f2aaa5b47960995e4aba694d, type: 3}
+  m_PrefabInstance: {fileID: 532758337952550592}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1790244951714120285
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6117511493230666136}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.05279064, y: 0.016224861}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 9}
+    newSize: {x: 1, y: 9}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.1055813, y: 7.953972}
+  m_EdgeRadius: 0
