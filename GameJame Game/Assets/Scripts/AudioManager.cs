@@ -10,6 +10,9 @@ public class AudioManager : MonoBehaviour
     [SerializeField]
     private AudioSource SFXSource;
 
+    [SerializeField]
+    private float waitTime = 10f;
+
 
     [Header("-----Audio Clip----")]
     public AudioClip background;
@@ -23,7 +26,7 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         MusicSource.clip = background;
-        Invoke(nameof(PlayMusic), 10f);
+        Invoke(nameof(PlayMusic), waitTime);
     }
 
     public void PlaySFX(AudioClip clip)
