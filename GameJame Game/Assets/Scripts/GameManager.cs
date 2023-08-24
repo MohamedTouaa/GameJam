@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine;
 
@@ -56,10 +57,17 @@ public class GameManager : MonoBehaviour
     {
         audioManager.PlaySFX(audioManager.Death);
         Instantiate(DestructionEffect, Player.transform.position, Quaternion.identity);
-        Destroy(Player.gameObject);
+        Player.SetActive(false);
+        StartCoroutine(loadscene());
+
+    }
+   public IEnumerator loadscene()
+    {
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(0);
     }
 
-  
+
 
 
 }

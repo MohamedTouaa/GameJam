@@ -71,7 +71,7 @@ public class DialogueManager : MonoBehaviour
         {
             
             StopAllCoroutines();
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(2);
         }
     }
 }

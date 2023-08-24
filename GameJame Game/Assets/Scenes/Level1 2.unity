@@ -124995,6 +124995,10 @@ PrefabInstance:
       value: The Guide
       objectReference: {fileID: 0}
     - target: {fileID: 6718132078121308355, guid: 9c1c0d13a1f0a9c49ba1e24a914ce53c, type: 3}
+      propertyPath: dialogue.spritePortrait
+      value: 
+      objectReference: {fileID: 21300000, guid: f91a0c0229555bc40aea9a6d58042bca, type: 3}
+    - target: {fileID: 6718132078121308355, guid: 9c1c0d13a1f0a9c49ba1e24a914ce53c, type: 3}
       propertyPath: dialogue.sentences.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -127363,6 +127367,10 @@ PrefabInstance:
       value: The Guide
       objectReference: {fileID: 0}
     - target: {fileID: 6718132078121308355, guid: 9c1c0d13a1f0a9c49ba1e24a914ce53c, type: 3}
+      propertyPath: dialogue.spritePortrait
+      value: 
+      objectReference: {fileID: 21300000, guid: f91a0c0229555bc40aea9a6d58042bca, type: 3}
+    - target: {fileID: 6718132078121308355, guid: 9c1c0d13a1f0a9c49ba1e24a914ce53c, type: 3}
       propertyPath: dialogue.sentences.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -127551,7 +127559,7 @@ PrefabInstance:
     - target: {fileID: 6718132078121308355, guid: 9c1c0d13a1f0a9c49ba1e24a914ce53c, type: 3}
       propertyPath: dialogue.spritePortrait
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: 2eddf676e2cff28409c5b3aa1faf73c5, type: 3}
     - target: {fileID: 6718132078121308355, guid: 9c1c0d13a1f0a9c49ba1e24a914ce53c, type: 3}
       propertyPath: dialogue.sentences.Array.size
       value: 1
@@ -128136,6 +128144,10 @@ PrefabInstance:
       propertyPath: dialogue.name
       value: The Guide
       objectReference: {fileID: 0}
+    - target: {fileID: 6718132078121308355, guid: 9c1c0d13a1f0a9c49ba1e24a914ce53c, type: 3}
+      propertyPath: dialogue.spritePortrait
+      value: 
+      objectReference: {fileID: 21300000, guid: f91a0c0229555bc40aea9a6d58042bca, type: 3}
     - target: {fileID: 6718132078121308355, guid: 9c1c0d13a1f0a9c49ba1e24a914ce53c, type: 3}
       propertyPath: dialogue.sentences.Array.size
       value: 1
@@ -129114,6 +129126,10 @@ PrefabInstance:
       value: The Guide
       objectReference: {fileID: 0}
     - target: {fileID: 6718132078121308355, guid: 9c1c0d13a1f0a9c49ba1e24a914ce53c, type: 3}
+      propertyPath: dialogue.spritePortrait
+      value: 
+      objectReference: {fileID: 21300000, guid: f91a0c0229555bc40aea9a6d58042bca, type: 3}
+    - target: {fileID: 6718132078121308355, guid: 9c1c0d13a1f0a9c49ba1e24a914ce53c, type: 3}
       propertyPath: dialogue.sentences.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -129607,6 +129623,10 @@ PrefabInstance:
       value: The Guide
       objectReference: {fileID: 0}
     - target: {fileID: 6718132078121308355, guid: 9c1c0d13a1f0a9c49ba1e24a914ce53c, type: 3}
+      propertyPath: dialogue.spritePortrait
+      value: 
+      objectReference: {fileID: 21300000, guid: f91a0c0229555bc40aea9a6d58042bca, type: 3}
+    - target: {fileID: 6718132078121308355, guid: 9c1c0d13a1f0a9c49ba1e24a914ce53c, type: 3}
       propertyPath: dialogue.sentences.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -129706,7 +129726,7 @@ PrefabInstance:
     - target: {fileID: 6718132078121308355, guid: 9c1c0d13a1f0a9c49ba1e24a914ce53c, type: 3}
       propertyPath: dialogue.spritePortrait
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: 6b35331d946386a4e8c19852fdfac69f, type: 3}
     - target: {fileID: 6718132078121308355, guid: 9c1c0d13a1f0a9c49ba1e24a914ce53c, type: 3}
       propertyPath: dialogue.sentences.Array.size
       value: 2
@@ -130200,6 +130220,10 @@ PrefabInstance:
       propertyPath: dialogue.name
       value: The Guide
       objectReference: {fileID: 0}
+    - target: {fileID: 6718132078121308355, guid: 9c1c0d13a1f0a9c49ba1e24a914ce53c, type: 3}
+      propertyPath: dialogue.spritePortrait
+      value: 
+      objectReference: {fileID: 21300000, guid: f91a0c0229555bc40aea9a6d58042bca, type: 3}
     - target: {fileID: 6718132078121308355, guid: 9c1c0d13a1f0a9c49ba1e24a914ce53c, type: 3}
       propertyPath: dialogue.sentences.Array.size
       value: 4

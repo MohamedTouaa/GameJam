@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -14,9 +15,12 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     private GameObject heealthBar;
     private HeealthBar Thehealth;
+    public GameManager gamemanger;
+
+
 
     AudioManager audioManager;
-    
+
 
 
     private void Awake()
@@ -26,13 +30,15 @@ public class Player : MonoBehaviour
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         heealthBar = GameObject.FindGameObjectWithTag("HealthBar");
         Thehealth = heealthBar.GetComponent<HeealthBar>();
+        
+
 
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Fallers") || collision.gameObject.CompareTag("FireGround"))
         {
-            
+
             Damage();
         }
     }
@@ -50,11 +56,12 @@ public class Player : MonoBehaviour
         {
             Thehealth.destroyHealth();
             Instantiate(explosion, this.transform.position, Quaternion.identity);
-            Destroy(this.gameObject);
+            this.gameObject.SetActive(false);
+            gamemanger.loadscene();
         }
         else
         {
-            
+
             Thehealth.destroyHealth();
             StartCoroutine(wait());
         }
@@ -65,7 +72,7 @@ public class Player : MonoBehaviour
         movement.enabled = true;
     }
 
-  private IEnumerator wait()
+    private IEnumerator wait()
     {
         rb.velocity = Vector2.zero;
         movement.enabled = false;
@@ -76,6 +83,8 @@ public class Player : MonoBehaviour
         sprite.enabled = true;
         movement.enabled = true;
     }
+
+
 
 
 }

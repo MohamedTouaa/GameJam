@@ -129696,6 +129696,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Finisher
       objectReference: {fileID: 0}
+    - target: {fileID: 2692715050007814059, guid: 0e44280fbde6b4f45bbd7cc8198f06ac, type: 3}
+      propertyPath: sceneInt
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7872900513816440050, guid: 0e44280fbde6b4f45bbd7cc8198f06ac, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.16
