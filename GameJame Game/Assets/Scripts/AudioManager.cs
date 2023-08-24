@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -22,11 +23,22 @@ public class AudioManager : MonoBehaviour
     public AudioClip teleport;
     public AudioClip button;
     public AudioClip coinCollect;
+    public AudioClip Medieval;
 
     private void Start()
     {
-        MusicSource.clip = background;
-        Invoke(nameof(PlayMusic), waitTime);
+        if (SceneManager.GetActiveScene().buildIndex >= 5)
+        {
+            MusicSource.clip = Medieval;
+            Invoke(nameof(PlayMusic), waitTime);
+        }
+        else
+        {
+            MusicSource.clip = background;
+            Invoke(nameof(PlayMusic), waitTime);
+        }
+      
+     
     }
 
     public void PlaySFX(AudioClip clip)
