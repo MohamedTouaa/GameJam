@@ -15,11 +15,12 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     private GameObject heealthBar;
     private HeealthBar Thehealth;
-    public GameManager gamemanger;
+
 
 
 
     AudioManager audioManager;
+
 
 
 
@@ -30,7 +31,7 @@ public class Player : MonoBehaviour
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         heealthBar = GameObject.FindGameObjectWithTag("HealthBar");
         Thehealth = heealthBar.GetComponent<HeealthBar>();
-        
+
 
 
     }
@@ -56,8 +57,10 @@ public class Player : MonoBehaviour
         {
             Thehealth.destroyHealth();
             Instantiate(explosion, this.transform.position, Quaternion.identity);
-            this.gameObject.SetActive(false);
-            gamemanger.loadscene();
+            sprite.enabled = false;
+            StartCoroutine(loadscene());
+
+
         }
         else
         {
@@ -84,6 +87,22 @@ public class Player : MonoBehaviour
         movement.enabled = true;
     }
 
+    private IEnumerator loadscene()
+    {
+        if (SceneManager.GetActiveScene().buildIndex == 5 || SceneManager.GetActiveScene().buildIndex == 6)
+        {
+            yield return new WaitForSeconds(1f);
+            SceneManager.LoadScene(5);
+           
+        }
+
+        else if (SceneManager.GetActiveScene().buildIndex ==2 || SceneManager.GetActiveScene().buildIndex == 4)
+        {
+            yield return new WaitForSeconds(1f);
+            SceneManager.LoadScene(2);
+
+        }
+    }
 
 
 

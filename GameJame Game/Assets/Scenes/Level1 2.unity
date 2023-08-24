@@ -129945,6 +129945,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8232001489261999336, guid: 22c884d9b5f5b1943a7718e7a70be392, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9151216784081675158, guid: 22c884d9b5f5b1943a7718e7a70be392, type: 3}
       propertyPath: m_Name
       value: Door (1)
@@ -130909,6 +130913,10 @@ PrefabInstance:
     - target: {fileID: 3826399204194246680, guid: 9c0d3f69c274ba543aef62b29922285c, type: 3}
       propertyPath: m_Offset.y
       value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3953794511807856842, guid: 9c0d3f69c274ba543aef62b29922285c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5202813086874930408, guid: 9c0d3f69c274ba543aef62b29922285c, type: 3}
       propertyPath: door
