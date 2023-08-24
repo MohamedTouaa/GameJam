@@ -1,1 +1,0 @@
-Just in case remove the is trigger from the new door prefab (even the old one) of keyed door in order to work
